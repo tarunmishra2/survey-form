@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>WebDev Survey</title>
+</head>
+<body>
+    <h1 id="title">Web Development Survey Form</h1>
+    <p id="description">Thank you for participating in this survey.</p>
+
+<form id="survey-form">
+    
+    <div class="form-control">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+        
+        <label for="email" id="email-label">Email</label>
+        <input type="email" email="email" id="email" placeholder="Enter a valid email" required><br>
+        
+        <label for="Age" id="number-label">Age (Optional)</label>
+        <input type="number" id="number" placeholder="Enter you age" min="10" max="100">
+        </div>
+
+        <div class="form-control">
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="dropdown">
+                <option value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="fulljob">Full-Time Job</option>
+                <option value="partjob">Part-Time Job</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="preferno">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <p>Select your favorite web language:</p>
+            <input type="radio" name="weblang" value="html">
+            <label for="html">HTML</label><br>
+            <input type="radio" name="weblang" value="css">
+            <label for="css">CSS</label><br>
+            <input type="radio" name="weblang" value="javascript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="radio" name="weblang" value="php">
+            <label for="php">PHP</label><br>
+            <input type="radio" name="weblang" value="ruby">
+            <label for="ruby">Ruby</label>
+        </div>
+            
+        <div class="form-control">
+            <p>What is your preferred domain in web development?</p>
+            <select name="webdev" id="webdev">
+                <option value="">Select your preference</option>
+                <option value="frontend">Front End Development</option>
+                <option value="backend">Back End Development</option>
+                <option value="fullstack">Full Stack Development</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <p>Please select your favorite frameworks:</p>
+            <input type="checkbox" value="Angular">
+            <label for="angular">Angular</label><br>
+            <input type="checkbox" value="Vue.Js">
+            <label for="Vue">Vue.Js</label><br>
+            <input type="checkbox" value="React">
+            <label for="react">React</label><br>
+            <input type="checkbox" value="jQuery">
+            <label for="jquery">jQuery</label><br>
+            <input type="checkbox" value="Ruby on Rails">
+            <label for="rubyonrails">Ruby on Rails</label>
+        </div>    
+            
+    <p>Any comments or suggestions?</p>
+    <textarea name="comments" id="comments" cols="87" rows="10"></textarea><br><br>
+
+    <button type="submit" id="submit">Submit</button>
+ </form>
+
+</body>
+</html>
